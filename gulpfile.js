@@ -2,15 +2,14 @@
 // --------------------------------------------------------- //
 var gulp            = require('gulp'),
     gulpsync        = require('gulp-sync')(gulp),
-    requireDir      = require('require-dir'),
-    packageJson     = require('./package.json');
+    requireDir      = require('require-dir');
 
 
 // Config & Paths
 // --------------------------------------------------------- //
 gulp.config = {
   compressed: true,
-  format: 'default', // default or wordpress
+  format: 'default',
   localhost: '127.0.0.1',
   port: '3001'
 };
@@ -27,18 +26,6 @@ gulp.paths = {
     pages: 'src/**/*.pug',
     pagesDest: 'www/',
     fontsDest: 'www/fonts',
-  },
-  wordpress: {
-    basePath: 'wordpress/',
-    scripts: 'src/js/**/*.js',
-    scriptsDest: 'wordpress/wp-content/themes/'+packageJson.name+'/js',
-    styles: 'src/css/**/*.sass',
-    stylesDest: 'wordpress/wp-content/themes/'+packageJson.name+'/css',
-    images: 'src/img/**/*.*',
-    imagesDest: 'wordpress/wp-content/themes/'+packageJson.name+'/img',
-    pages: 'src/**/*.pug',
-    pagesDest: 'wordpress/wp-content/themes/'+packageJson.name,
-    fontsDest: 'wordpress/wp-content/themes/'+packageJson.name+'/fonts'
   }
 };
 

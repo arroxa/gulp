@@ -10,7 +10,7 @@ Tarefas como: minificar, concatenar, upload de arquivos e entre tantas outras.
 
 ### Tarefas
 - HTML
-  - PUG
+  - PUG `antigo jade`
   - Minifica
 
 - CSS
@@ -27,7 +27,7 @@ Tarefas como: minificar, concatenar, upload de arquivos e entre tantas outras.
 	- Minifica
 
 - Geral
-	- BrowserSync
+	- BrowserSync/ConnectSync
 
 
 ### Estrutura
@@ -44,11 +44,11 @@ Tarefas como: minificar, concatenar, upload de arquivos e entre tantas outras.
 ##### Produção
 - www/
 	- css/
-    - libs.min.css
-	  - main.min.css
+      - libs.min.css
+      - main.min.css
 	- js/
-    - libs.min.js
-	  - main.min.js
+      - libs.min.js
+      - main.min.js
 	- img/
 	- index.html
 
@@ -59,7 +59,7 @@ Tarefas como: minificar, concatenar, upload de arquivos e entre tantas outras.
 - Clone o repositório `$ git clone https://github.com/arroxa/gulp.git`
 - Acesse a pasta clonada `$ cd gulp`
 - Instale as dependências `$ npm install`
-- Execute o grunt `$ gulp`
+- Execute o gulp `$ gulp`
 - Pronto! Se tudo ocorrer direitinho seu navegador irá abrir com uma página demo, e depois é só arroxar! ;)
 
 
